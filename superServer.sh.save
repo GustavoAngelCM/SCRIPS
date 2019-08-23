@@ -1,0 +1,73 @@
+#! /bin/bash
+
+echo -e "Así se escribe \e[1;34mG\e[0m\e[1;31mo\e[0m\e[1;33mo\e[0m\e[1;34mg\e[0m\e[1;32ml\e[0m\e[1;31me\e[0m"
+
+ while ["$yn" != "Yes" ]; do
+
+    echo "Choose your type of installation"
+
+    echo "1) Home Media Server"
+
+    echo "2) Home Communication Server"
+
+    echo "3) Enterprise Communication Server"
+
+    echo "4) Hosting Server"
+
+    echo "5) Individual Packages"
+
+    echo "6) exit"
+
+    read case;
+
+
+
+    #simple case bash structure
+
+    # note in this case $case is variable and does not have to
+
+    # be named case this is just an example
+case $case in
+
+        1) echo "You have entered Home Media Server, is this correct? (Yes or No)"
+
+      read yn
+
+                echo "Running script for Home Media Server";;
+
+
+
+        2) echo "You have entered Home Communication Server, is this correct? (Yes or No)"
+
+      read yn
+
+                echo "Running script for Home Communication Server";;
+
+
+
+        3) echo "You have entered Enterprise Communication Server, is this correct? (Yes or No)"
+
+      read yn
+
+                echo "Running script for Enterprise Communication Server";;
+
+
+
+        4) echo "You have entered Hosting Server, is this correct? (Yes or No)"
+       read yn
+
+                echo "Running script for Hosting Server";;
+
+
+
+        5) echo "You have entered $hname, is this correct? (Yes or No)"
+
+      read yn
+
+                echo "Running script for Individual Packages";;
+
+
+
+        6) exit
+
+    esac
